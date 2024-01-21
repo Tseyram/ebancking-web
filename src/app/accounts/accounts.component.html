@@ -35,7 +35,7 @@
                 </strong></label
               >
             </div>
-            <table class="table">
+            <table class="table" aria-label="account details">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -50,13 +50,6 @@
                   <td>{{ op.operationDate | date : "dd-mm-yyyy:HH-mm-ss" }}</td>
                   <td>{{ op.type }}</td>
                   <td class="text-end">{{ op.amount | number : "1.2-2" }}</td>
-
-                  <!-- <button
-                      (click)="handleDeleteCustomer(c)"
-                      class="btn btn-danger"
-                    >
-                      <i class="bi bi-trash"></i>
-                    </button> -->
                 </tr>
               </tbody>
             </table>
